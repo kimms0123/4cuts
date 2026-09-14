@@ -5,12 +5,13 @@
 // 2. 아래 배열에 새 항목을 추가하고 image 경로 + width/height + slots(사진 4장이 들어갈 좌표)를 채운다
 //    slots 좌표는 frame 원본 이미지 픽셀 기준 (x, y, w, h)
 //
-// hasImage:false 인 항목은 이미지가 없을 때 코드로 그려주는 임시(placeholder) 틀입니다.
+// hasImage:false 인 항목은 이미지가 없을 때 코드로 그려주는 임시(placeholder) 틀임.
 
+// 기본 프레임
 const FRAME_TEMPLATES = [
   {
     id: "placeholder-strip",
-    name: "기본 필름 스트립 (임시)",
+    name: "기본 프레임",
     hasImage: false,
     width: 1200,
     height: 1800,
@@ -25,10 +26,9 @@ const FRAME_TEMPLATES = [
     ],
   },
 
-  // 예시: 실제 프레임 이미지를 넣을 때 이런 식으로 추가하면 됩니다.
   {
     id: "vaundy-strip",
-    name: "내가 만든 프레임",
+    name: "바운디 세로 4컷",
     hasImage: true,
     image: "/frames/vaundy-strip.png",
     width: 1024,
@@ -44,7 +44,7 @@ const FRAME_TEMPLATES = [
   // 넓은 4컷
   {
     id: "vaundy-gird",
-    name: "vaundy_가로",
+    name: "바운디_가로4컷",
     hasImage: true,
     image: "/frames/vaundy-grid.png",
     width: 1024,
@@ -59,7 +59,7 @@ const FRAME_TEMPLATES = [
   // 넓은 4컷 포토
   {
     id: "vaundy-gird-photo",
-    name: "vaundy_가로_포토",
+    name: "바운디_가로네컷_2",
     hasImage: true,
     image: "/frames/vaundy-grid-photo.png",
     width: 1024,
